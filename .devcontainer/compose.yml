@@ -1,0 +1,9 @@
+services:
+  sandbox:
+    build:
+      context: .
+      args:
+        GIT_USER: ${GIT_USER}
+        GIT_MAIL: ${GIT_MAIL}
+    tty: true
+    privileged: true
